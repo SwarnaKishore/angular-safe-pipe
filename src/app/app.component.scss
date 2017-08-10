@@ -1,0 +1,75 @@
+$red: #f98ca4;
+$blue: #4ad9db;
+$green: #65f283;
+$orange: #f5b10b;
+
+$darkblue: #2f3e9c;
+$darkred: #9e132c;
+$purple:#6e1f58;
+
+$outline: 2px;
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background:linear-gradient(10deg, rgba(244,235,160,1) 43%,rgba(192,250,202,1) 43%);
+}
+
+h1 {	
+	font-family: 'CoreCircus', sans-serif;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 50px;
+	text-align: center;
+	line-height: 1;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	color: $red;
+	text-shadow: 
+			-1px -1px 0 $purple, 1px -1px 0 $purple, -1px 1px 0 $purple, 1px 1px 0 $purple, 
+			1px 0px 0px $green, 0px 1px 0px $green, 2px 1px 0px $green, 1px 2px 0px $green, 3px 2px 0px $green, 2px 3px 0px $green, 4px 3px 0px $green, 3px 4px 0px $green, 5px 4px 0px $green,
+			3px 5px 0px $purple, 6px 5px 0px $purple, 
+			-1px 2px 0 black, 0 3px 0 $purple, 1px 4px 0 $purple, 2px 5px 0px $purple,
+			2px -1px 0 $purple, 3px 0 0 $purple, 4px 1px 0 $purple, 5px 2px 0px $purple, 6px 3px 0 $purple, 7px 4px 0 $purple,
+		10px 10px 4px #dac249;
+	
+	&:after,
+	&:before {
+		content: attr(data-heading);
+		position: absolute;
+		overflow: hidden;
+		left: 0;		
+		width: 100%;
+		top: 0;
+		z-index: 5;
+	}
+	
+	&:before {
+		
+		text-shadow: 
+			-1px -1px 0 $darkred, 1px -1px 0 $darkred, -1px 1px 0 $darkred, 1px 1px 0 $darkred, 
+			1px 0px 0px $orange, 0px 1px 0px $orange, 2px 1px 0px $orange, 1px 2px 0px $orange, 3px 2px 0px $orange, 2px 3px 0px $orange, 4px 3px 0px $orange, 3px 4px 0px $orange, 5px 4px 0px $orange,
+			3px 5px 0px $darkred, 6px 5px 0px $darkred, 
+			-1px 2px 0 black, 0 3px 0 $darkred, 1px 4px 0 $darkred, 2px 5px 0px $darkred,
+			2px -1px 0 $darkred, 3px 0 0 $darkblue, 4px 1px 0 $darkred, 5px 2px 0px $darkred, 6px 3px 0 $darkred, 7px 4px 0 $darkred,
+			10px 10px 4px rgba(#6af177, .8);
+		color: $green;
+		height: 66%;
+	}
+	
+	&:after {
+		height: 33%;
+		color: $blue;
+		text-shadow: 
+			-1px -1px 0 $darkblue, 1px -1px 0 $darkblue, -1px 1px 0 $darkblue, 1px 1px 0 $darkblue, 
+			1px 0px 0px $red, 0px 1px 0px $red, 2px 1px 0px $red, 1px 2px 0px $red, 3px 2px 0px $red, 2px 3px 0px $red, 4px 3px 0px $red, 3px 4px 0px $red, 5px 4px 0px $red,
+			3px 5px 0px $darkblue, 6px 5px 0px $darkblue, 
+			-1px 2px 0 black, 0 3px 0 $darkblue, 1px 4px 0 $darkblue, 2px 5px 0px $darkblue,
+			2px -1px 0 $darkblue, 3px 0 0 $darkblue, 4px 1px 0 $darkblue, 5px 2px 0px $darkblue, 6px 3px 0 $darkblue, 7px 4px 0 $darkblue;
+	}
+}
+

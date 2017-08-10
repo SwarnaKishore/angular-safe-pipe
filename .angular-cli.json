@@ -22,7 +22,9 @@
         "styles.css",
         "../node_modules/sweetalert/dist/sweetalert.css"
       ],
-      "scripts": ["../node_modules/sweetalert/dist/sweetalert.min.js"],
+      "scripts": [
+        "../node_modules/sweetalert/dist/sweetalert.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -52,7 +54,8 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
+    "styleExt": "scss",
+    "component": {
+    }
   }
 }

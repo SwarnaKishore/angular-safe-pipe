@@ -1,1 +1,2 @@
-<span [innerHTML] = "htmlSnippet | safe: 'script'"></span> 
+<span #element [innerHTML] = "htmlSnippet | safe: 'html'"></span> 
+<h1 (click) = "appendHTMLSnippetToDOM()" data-heading="Run the script again">Run the script again</h1>
